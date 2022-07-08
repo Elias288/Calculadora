@@ -32,6 +32,8 @@ calculator.innerHTML=`
 		<input id="multiplicar" type="submit" value="*">
 		<input id="igual" type="submit" value="=">
 		<input id="del" type="submit" value="DEL">
+		<input id="derivative" type="submit" value="der">
+		<input id="integral" type="submit" value="int">
 	</div>
 `
 
@@ -41,7 +43,6 @@ var menos = document.getElementById('menos')
 var divir = document.getElementById('divir')
 var multiplicar = document.getElementById('multiplicar')
 var derivar = document.getElementById('derivar')
-var integrar = document.getElementById('integrar')
 
 var igual = document.getElementById('igual')
 var first, second
@@ -136,5 +137,9 @@ window.addEventListener('load', () => {
 		input.value = "0"
 		first = 0
 		second = 0
+	})
+	document.getElementById('derivative').addEventListener('click', () => {
+		first = math.derivative(input.value, 'x')
+		input.value = first.toString()
 	})
 })
