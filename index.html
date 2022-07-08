@@ -7,6 +7,52 @@
 	<title>Document</title>
 </head>
 <body>
+	<style>
+		#calculator{
+			width: 500px;
+		}
+		.botones{
+			width: 100%;
+			display: grid;
+			gap: 5px;
+    		grid-template-columns: auto auto auto auto;
+		}
+		.botones input{
+			padding: 1rem;
+		}
+		#plus{
+			grid-row: 1;
+			grid-column: 4;
+		}
+		#menos{
+			grid-row: 2;
+			grid-column: 4;
+		}
+		#multiplicar{
+			grid-row: 3;
+			grid-column: 4;
+		}
+		#divir{
+			grid-row: 3;
+			grid-column: 4;
+		}
+		#del{
+			grid-row: 4;
+			grid-column: 4;
+		}
+		#cero{
+			grid-row: 4;
+			grid-column: 2;
+		}
+		#igual{
+			grid-row: 4;
+			grid-column: 3;
+		}
+		
+		input[type="text"]{
+			width: 100%;
+		}
+	</style>
 	<div id="calculator">
 		
 	</div>
